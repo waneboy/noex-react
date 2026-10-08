@@ -1,0 +1,15 @@
+.about-page{
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 180px;
+    }
+    &__intro{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+}

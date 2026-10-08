@@ -1,0 +1,10 @@
+.home-page{
+    display: flex;
+    flex-direction: column;
+    gap: 160px;
+    &__forms{
+        display: flex;
+        flex-direction: column;
+        gap: 120px;
+    }
+}

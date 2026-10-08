@@ -1,0 +1,64 @@
+.header{
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__nav{
+        margin-inline: 20px;
+        max-width: 1200px;
+        width: 100%;
+        height: 78px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo{
+        user-select: none;
+        img{
+            transition: all ease 0.3s;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+    &__link{
+        display: flex;
+        padding-inline: 13px;
+        align-items: center;
+        height: 50px;
+        font-family: "Manrope", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-size: 1rem;
+        font-weight: bold;
+        line-height: 1.4;
+        color: #E5E5E5;
+    }
+    &__phone{
+        height: 22px;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        p{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #E5E5E5;
+            font-weight:lighter;
+        }
+    }
+    &__phone-icon{
+        user-select: none;
+        width: 16px;
+        height: 16px;
+        background-image: url(../../assets/icons/phone.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

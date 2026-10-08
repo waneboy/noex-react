@@ -1,0 +1,188 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.hero-slider__slide{
+    &--geology{
+        .hero-slide{
+            background-image: url(../../../../assets/home/hero/bg2.png);
+        }
+    }
+    &--ecology{
+        .hero-slide{
+            background-image: url(../../../../assets/home/hero/bg3.png);
+        }
+    }
+    &--engineering{
+        .hero-slide{
+            background-image: url(../../../../assets/home/hero/bg4.png);
+        }
+    }
+}
+
+
+.hero-slide{
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+    height: 762px;
+    background-image: url(../../../../assets/home/hero/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-block-start: 130px;
+    &__container{
+        margin-inline: 20px;
+        max-width: 1200px;
+        width: 100%;
+        min-height: 564px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    &__content{
+        max-width: 780px;
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+        h1{
+            font-size: 3rem;
+            color: #F2F2F2;
+            line-height: 1.2;
+            font-family: "Manrope", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+        }
+        p{
+            font-size: 1.5rem;
+            line-height: 1.4;
+            color: #BBBCBC;
+        }
+    }
+    &__actions{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        p{
+            max-width: 360px;
+            width: 100%;
+            line-height: 1.4;
+            font-size: 1.125rem;
+            color: #DFD1A7;
+        }
+    }
+    &__buttons{
+        display: flex;
+        gap: 10px;
+    }
+    &__button{
+        width: 210px;
+        height: 46px;
+        color: #0A090D;
+        font-size: 0.875rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            transform: scale(1.05);
+        }
+        &--primary{
+            background-color: #A7C186;
+        }
+        &--secondary{
+            background-color: #DFD1A7;
+        }
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        user-select: none;
+    }
+    &__dots{
+        align-items: center;
+        height: 18px;
+        max-width: 220px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        user-select: none;
+        button{
+            height: 18px;
+            width: 36px;
+            div{
+                width: 100%;
+                height: 3px;
+                border-radius: 100px;
+                background-color: #393939;
+            }
+        }
+        .is-active{
+            div{
+                background-color: #DFD1A7;
+                transition: all ease 0.5s;
+            }
+        }
+    }
+    &__navigation{
+        max-width: 360px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__arrows{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        button{
+            width: 70px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                transition: all ease 0.5s;
+            }
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__counter{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        p{
+            font-size: 1.5rem;
+            color: #E5E5E5;
+            line-height: 1.5;
+            font-family: "Manrope", sans-serif;
+        }
+    }
+}
